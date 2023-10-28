@@ -10,6 +10,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using System.Diagnostics;
 
 namespace BP_ClientPatch_Updater {
     internal class Program {
@@ -164,6 +165,10 @@ namespace BP_ClientPatch_Updater {
 
                     ClearCurrentConsoleLine();
                     Console.WriteLine($"\r[INIT] Unpacked '{fileName_zip}'");
+                    Console.WriteLine($"\n\n[INFO] Please replace existing the .PAK file on the current folder into inside ~mods folder.\n\n");
+
+                    string currentDirectory = System.IO.Directory.GetCurrentDirectory();
+                    Process.Start("explorer.exe", currentDirectory);
                 } catch (Exception e) {
                     ClearCurrentConsoleLine();
                     Console.WriteLine($"\r[INIT] Fail to unpack '{fileName_zip}', skipping.\n{e.Message}");
@@ -176,6 +181,8 @@ namespace BP_ClientPatch_Updater {
                 ClearCurrentConsoleLine();
                 Console.WriteLine($"\r[INIT] Saved '{fileName_bptlSetting}'");
             }
+
+            Console.WriteLine($"\n\n[INFO] You can close this app.");
 
             while (true) Console.ReadKey();
         }
