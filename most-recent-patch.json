@@ -1,8 +1,8 @@
 {
 	"_appver": "1.0.0.0",
 	"_available": ["en", "id", "es", "pt", "de", "ru", "ru-ru", "fr", "it"],
-	"en": [20230101.0000, "English", ""],
-	"id": [20230101.0000, "Indonesia", ""],
+	"en": [20231026.2000, "English", "https://cdn.discordapp.com/attachments/1127480665257029682/1167058464963567636/DStars_client_patch_en-en_1_P.zip"],
+	"id": [20231026.2000, "Indonesia", "https://cdn.discordapp.com/attachments/1127480665257029682/1167058514015961169/DStars_client_patch_en-id_1_P.zip"],
 	"es": [20230101.0000, "Espanol", ""],
 	"pt": [20230101.0000, "Portugues", ""],
 	"de": [20230101.0000, "Deutsch", ""],
