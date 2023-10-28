@@ -32,6 +32,7 @@ namespace BP_ClientPatch_Updater {
             bool isDownload = !File.Exists(filePath_zip);
             bool isSave = false;
             bool isUnpack = false;
+            bool isUnpacked = false;
 
             JObject jsonObjectAppSetting = new JObject();
             string selectedLanguage = "en";
@@ -154,7 +155,9 @@ namespace BP_ClientPatch_Updater {
             if (isUnpack) {
                 Console.Write($"[INIT] Unpacking '{fileName_zip}'...");
                 try {
-                    string extractDirectory = Directory.GetCurrentDirectory();
+                    string extractDirectory = Path.Combine(Directory.GetCurrentDirectory(), "~mods");
+
+                    if (!Directory.Exists(extractDirectory)) Directory.CreateDirectory(extractDirectory);
 
                     using (ZipFile zip = ZipFile.Read(filePath_zip)) {
                         zip.ExtractAll(extractDirectory, ExtractExistingFileAction.OverwriteSilently);
@@ -165,10 +168,7 @@ namespace BP_ClientPatch_Updater {
 
                     ClearCurrentConsoleLine();
                     Console.WriteLine($"\r[INIT] Unpacked '{fileName_zip}'");
-                    Console.WriteLine($"\n\n[INFO] Please replace existing the .PAK file on the current folder into inside ~mods folder.\n\n");
-
-                    string currentDirectory = System.IO.Directory.GetCurrentDirectory();
-                    Process.Start("explorer.exe", currentDirectory);
+                    isUnpacked = true;
                 } catch (Exception e) {
                     ClearCurrentConsoleLine();
                     Console.WriteLine($"\r[INIT] Fail to unpack '{fileName_zip}', skipping.\n{e.Message}");
@@ -182,7 +182,20 @@ namespace BP_ClientPatch_Updater {
                 Console.WriteLine($"\r[INIT] Saved '{fileName_bptlSetting}'");
             }
 
-            Console.WriteLine($"\n\n[INFO] You can close this app.");
+            Console.WriteLine();
+
+            if (isUnpacked) {
+                string extractDirectory = Path.Combine(Directory.GetCurrentDirectory(), "~mods");
+
+                Console.WriteLine($"[INFO] 1. Make sure to delete \"~mods\" folder in \"BLUEPROTOCOL\\Content\\Paks\" folder.");
+                Console.WriteLine($"[INFO] 2. Move \"~mods\" folder to \"BLUEPROTOCOL\\Content\\Paks\" folder.");
+                Console.WriteLine();
+
+                string currentDirectory = Directory.GetCurrentDirectory();
+                Process.Start("explorer.exe", currentDirectory);
+            }
+
+            Console.WriteLine($"[INFO] You can close this app.");
 
             while (true) Console.ReadKey();
         }
