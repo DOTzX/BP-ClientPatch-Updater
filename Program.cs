@@ -15,7 +15,7 @@ using System.Diagnostics;
 namespace BP_ClientPatch_Updater {
     internal class Program {
         const string fileName_MostRecentPatch = "most-recent-patch.json";
-        static string urlPath_MostRecentPatch = "https://raw.githubusercontent.com/DOTzX/BP-ClientPatch-Updater/main/most-recent-patch.json?t=" + Convert.ToString((int) DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
+        static string urlPath_MostRecentPatch = "https://raw.githubusercontent.com/DOTzX/BP-ClientPatch-Updater/master/most-recent-patch.json?t=" + Convert.ToString((int) DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
 
         const string fileName_bptlSetting = "bpcpu_setting.json";
         static string filePath_bptlSetting = Path.Combine(Directory.GetCurrentDirectory(), fileName_bptlSetting);
