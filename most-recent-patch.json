@@ -1,15 +1,15 @@
 {
 	"_appver": "1.0.0.0",
 	"_available": ["en", "id", "es", "pt", "de", "ru", "ru-ru", "fr", "it", "ar", "ku"],
-	"de": [20231119.1300, "Deutsch", "https://cdn.discordapp.com/attachments/295519814972342273/1175649471103766578/en-de_1_P.zip"],
-	"en": [20231119.1300, "English", "https://cdn.discordapp.com/attachments/295519814972342273/1175649471443501136/en-en_1_P.zip"],
-	"ru": [20231119.1300, "Russian", "https://cdn.discordapp.com/attachments/295519814972342273/1175649473028948098/en-ru_1_P.zip"],
-	"es": [20231119.1300, "Espanol", "https://cdn.discordapp.com/attachments/295519814972342273/1175649471758082101/en-es_1_P.zip"],
-	"id": [20231119.1300, "Indonesia", "https://cdn.discordapp.com/attachments/295519814972342273/1175649472072646656/en-id_1_P.zip"],
-	"it": [20231119.1300, "Italian", "https://cdn.discordapp.com/attachments/295519814972342273/1175649472399810560/en-it_1_P.zip"],
-	"pt": [20231119.1300, "Portugues", "https://cdn.discordapp.com/attachments/295519814972342273/1175649472685019196/en-pt_1_P.zip"],
-	"fr": [20231119.1300, "Francais (en)", "https://cdn.discordapp.com/attachments/295519814972342273/1175649471443501136/en-en_1_P.zip"],
-	"ar": [20231119.1300, "Arabic (en)", "https://cdn.discordapp.com/attachments/295519814972342273/1175649471443501136/en-en_1_P.zip"],
-	"ku": [20231119.1300, "Kurdish (en)", "https://cdn.discordapp.com/attachments/295519814972342273/1175649471443501136/en-en_1_P.zip"],
-	"ru-ru": [20231119.1300, "Russian", "https://cdn.discordapp.com/attachments/295519814972342273/1175649470717886555/ru-ru_1_P.zip"]
+	"de": [20231125.2150, "Deutsch", "https://cdn.discordapp.com/attachments/295519814972342273/1177957724236025937/en-de_1_P.zip"],
+	"en": [20231125.2150, "English", "https://cdn.discordapp.com/attachments/295519814972342273/1177957724592554115/en-en_1_P.zip"],
+	"ru": [20231125.2150, "Russian", "https://cdn.discordapp.com/attachments/295519814972342273/1177957726261887066/en-ru_1_P.zip"],
+	"es": [20231125.2150, "Espanol", "https://cdn.discordapp.com/attachments/295519814972342273/1177957724932276325/en-es_1_P.zip"],
+	"id": [20231125.2150, "Indonesia", "https://cdn.discordapp.com/attachments/295519814972342273/1177957725284601926/en-id_1_P.zip"],
+	"it": [20231125.2150, "Italian", "https://cdn.discordapp.com/attachments/295519814972342273/1177957725565632542/en-it_1_P.zip"],
+	"pt": [20231125.2150, "Portugues", "https://cdn.discordapp.com/attachments/295519814972342273/1177957725909553252/en-pt_1_P.zip"],
+	"fr": [20231125.2150, "Francais (en)", "https://cdn.discordapp.com/attachments/295519814972342273/1177957724592554115/en-en_1_P.zip"],
+	"ar": [20231125.2150, "Arabic (en)", "https://cdn.discordapp.com/attachments/295519814972342273/1177957724592554115/en-en_1_P.zip"],
+	"ku": [20231125.2150, "Kurdish (en)", "https://cdn.discordapp.com/attachments/295519814972342273/1177957724592554115/en-en_1_P.zip"],
+	"ru-ru": [20231125.2150, "Russian", "https://cdn.discordapp.com/attachments/295519814972342273/1177957726614192180/ru-ru_1_P.zip"]
 }
